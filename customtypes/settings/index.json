@@ -1,0 +1,49 @@
+{
+  "id": "settings",
+  "label": "settings",
+  "format": "custom",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "site_title": {
+        "type": "Text",
+        "config": {
+          "label": "site title",
+          "placeholder": ""
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "meta description",
+          "placeholder": ""
+        }
+      },
+      "food_categories": {
+        "type": "Group",
+        "config": {
+          "label": "food categories",
+          "fields": {
+            "label": {
+              "type": "Select",
+              "config": {
+                "label": "label",
+                "placeholder": "",
+                "options": [
+                  "drink",
+                  "appetizer",
+                  "dessert",
+                  "pizza",
+                  "snack",
+                  "salad",
+                  "all"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
