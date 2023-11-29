@@ -40,7 +40,6 @@ const Highlight = ({ slice }: HighlightProps): JSX.Element => {
         className="py-16"
       >
         <PrismicRichText field={slice.primary.title} components={components} />
-
         <div className="grid grid-cols-1 gap-4 mt-8 md:gap-6 md:grid-cols-3">
           {slice.items.map((item, index) => {
             const formatted = new Intl.NumberFormat('pt-BR', {
@@ -73,8 +72,10 @@ const Highlight = ({ slice }: HighlightProps): JSX.Element => {
           })}
         </div>
       </Bounded>
-      <div className="sticky top-0 w-full px-4 bg-background md:px-6">
-        <CategoriesList />
+      <div className="sticky top-0 z-50 w-full p-4 md:px-6 bg-background">
+        <div className="w-full max-w-6xl mx-auto">
+          <CategoriesList />
+        </div>
       </div>
     </>
   );

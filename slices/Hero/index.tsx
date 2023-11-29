@@ -24,7 +24,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
     <Bounded
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
-      className="mt-28"
+      className="mt-10"
     >
       <div className="relative w-full h-[128px] md:h-[180px] overflow-hidden drop-shadow-lg rounded-lg ring ring-white">
         <PrismicNextImage

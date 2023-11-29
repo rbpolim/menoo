@@ -17,7 +17,7 @@ const Features = ({ slice }: FeaturesProps): JSX.Element => {
     <Bounded
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
-      className="min-h-screen py-16"
+      className="py-16"
     >
       <FeaturesList
         title={slice.primary.title}

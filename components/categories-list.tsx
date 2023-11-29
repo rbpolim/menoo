@@ -9,7 +9,7 @@ export async function CategoriesList() {
 
   return (
     <ScrollArea>
-      <ul className="flex items-center py-2 gap-x-6">
+      <ul className="flex items-center p-2 gap-x-6">
         {settings.data.food_categories.map((category, index) => (
           <CategoryItem
             key={index}

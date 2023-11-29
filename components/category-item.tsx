@@ -56,9 +56,10 @@ export function CategoryItem({
       duration={500}
       offset={-180}
       spy={true}
+      activeClass="border-primary ring ring-neutral-200"
       onClick={onClick}
       className={cn(
-        'cursor-pointer flex items-center gap-x-2 px-3 py-2 border rounded-lg capitalize font-medium hover:bg-gray-50 shadow',
+        'cursor-pointer flex items-center gap-x-2 px-3 py-2 border rounded-lg capitalize font-medium hover:bg-muted shadow',
         isSelected ? 'border-primary ring ring-neutral-200' : 'border-gray-300'
       )}
     >

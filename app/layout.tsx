@@ -40,7 +40,9 @@ export default function RootLayout({
         >
           <main className="flex flex-col h-full">
             <Header />
-            {children}
+            <div className='pb-40'>
+              {children}
+            </div>
             <Footer />
           </main>
         </ThemeProvider>

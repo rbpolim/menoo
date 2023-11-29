@@ -97,7 +97,7 @@ export interface SettingsDocumentDataFoodCategoriesItem {
    * - **Documentation**: https://prismic.io/docs/field#select
    */
   label: prismic.SelectField<
-    "drink" | "appetizer" | "dessert" | "pizza" | "snack" | "salad" | "all"
+    "drink" | "appetizer" | "dessert" | "pizza" | "snack" | "salad"
   >;
 }
 
