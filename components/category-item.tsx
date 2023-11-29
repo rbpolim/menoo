@@ -1,5 +1,6 @@
 'use client'
 
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 import { cn } from "@/lib/utils";
 import { SettingsDocumentDataFoodCategoriesItem } from "@/prismicio-types";
 import {
@@ -49,18 +50,21 @@ export function CategoryItem({
   }
 
   return (
-    <button
-      type="button"
-      key={item.label}
+    <Link
+      to={`${item.label}`}
+      smooth={true}
+      duration={500}
+      offset={-180}
+      spy={true}
       onClick={onClick}
       className={cn(
-        'flex items-center gap-x-2 px-3 py-2 border rounded-lg capitalize font-medium hover:bg-gray-50 shadow',
+        'cursor-pointer flex items-center gap-x-2 px-3 py-2 border rounded-lg capitalize font-medium hover:bg-gray-50 shadow',
         isSelected ? 'border-primary ring ring-neutral-200' : 'border-gray-300'
       )}
     >
       {/* @ts-ignore TODO fix */}
       {iconMap[item.label]}
       {item.label}
-    </button>
+    </Link>
   )
 }

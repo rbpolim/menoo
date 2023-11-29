@@ -21,7 +21,7 @@ export function Bounded({
     <Comp
       {...props}
       className={cn(
-        'px-4 py-4 md:py-14 md:px-6 lg:py-8',
+        'px-4',
         className,
       )}
     >

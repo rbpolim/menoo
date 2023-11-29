@@ -8,7 +8,7 @@ export async function CategoriesList() {
   const settings = await client.getSingle('settings')
 
   return (
-    <ScrollArea className="py-10">
+    <ScrollArea>
       <ul className="flex items-center py-2 gap-x-6">
         {settings.data.food_categories.map((category, index) => (
           <CategoryItem
