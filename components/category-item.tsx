@@ -17,7 +17,6 @@ import { useCategoryStore } from "@/store/category-store";
 
 {/* @ts-ignore TODO fix */ }
 const iconMap: Record<SettingsDocumentDataFoodCategoriesItem["label"], LucideProps> = {
-  "all": <MenuSquare />,
   "drink": <CupSoda />,
   "appetizer": <CupSoda />,
   "dessert": <CakeSlice />,
